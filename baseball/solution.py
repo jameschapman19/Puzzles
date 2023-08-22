@@ -117,7 +117,7 @@ if __name__ == "__main__":
     # Parameters
     prob_single = 1 / 3
     prob_home_run = 1 / 10
-    simulations = 1000000
+    simulations = 2
 
     # Get the best position for the slugger and average runs for each position
     best_position, average_runs_list = evaluate_batting_orders(prob_single, prob_home_run, simulations)
@@ -133,7 +133,7 @@ if __name__ == "__main__":
     plt.legend()
     plt.tight_layout()
     plt.show()
-    plt.savefig('solution.png')
+    plt.savefig('solution.svg',format="svg")
 
     print(f"The best position for the slugger is: {best_position}")
 

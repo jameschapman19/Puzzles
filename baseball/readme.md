@@ -9,7 +9,7 @@ You are the manager of the New York Frets, and it's been a tough season. You nee
 
 To solve this puzzle, we simulated the first inning using different positions for the slugger. By iterating through various batting orders and running simulations, we were able to determine the optimal position for the slugger to maximize the average number of runs scored.
 
-![Heatmap showing average runs for different slugger positions](solution.png)
+![Lineplot showing average runs for different slugger positions](solution.svg)
 
 
 ## Extra Credit: Two Sluggers and Nine Innings
@@ -21,7 +21,7 @@ And we didn't stop there. We created a visual representation using a heatmap, wh
 
 Here's what the heatmap looks like:
 
-![Heatmap showing average runs for different slugger positions](extra_credit.png)
+![Heatmap showing average runs for different slugger positions](extra_credit.svg)
 
 # Conclusion
 Whether you're a manager looking to right the ship or a fan curious about baseball strategy, these puzzles reveal the intriguing complexity of the game. By using mathematical simulations and visually appealing plots, we can explore innovative strategies to improve performance and win games.

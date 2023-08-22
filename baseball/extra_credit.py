@@ -67,5 +67,5 @@ if __name__ == '__main__':
     plt.xticks(np.arange(9) + 0.5, np.arange(1, 10), weight='bold', fontsize=8)
     plt.yticks(np.arange(9) + 0.5, np.arange(1, 10), weight='bold', fontsize=8)
     plt.tight_layout()
-    plt.savefig('extra_credit.png')
+    plt.savefig('extra_credit.svg',format="svg")
     plt.show()
