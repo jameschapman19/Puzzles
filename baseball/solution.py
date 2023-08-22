@@ -112,24 +112,28 @@ def evaluate_batting_orders(prob_single, prob_home_run, simulations=50000):
 
     return best_position + 1, average_runs_list
 
-# Parameters
-prob_single = 1 / 3
-prob_home_run = 1 / 10
-simulations = 2000000
 
-# Get the best position for the slugger and average runs for each position
-best_position, average_runs_list = evaluate_batting_orders(prob_single, prob_home_run, simulations)
+if __name__ == "__main__":
+    # Parameters
+    prob_single = 1 / 3
+    prob_home_run = 1 / 10
+    simulations = 1000000
 
-# Plotting the results with FiveThirtyEight style
-style.use('fivethirtyeight')
-plt.plot(range(1, 10), average_runs_list, marker='o')
-plt.xlabel('Slugger Position in Lineup')
-plt.ylabel('Average Runs Scored')
-plt.title('Average Runs Scored for Each Slugger Position',wrap=True)
-plt.axvline(x=best_position, color='r', linestyle='--', label=f'Optimal Position: {best_position}')
-plt.xticks(range(1, 10))
-plt.legend()
-plt.tight_layout()
-plt.show()
+    # Get the best position for the slugger and average runs for each position
+    best_position, average_runs_list = evaluate_batting_orders(prob_single, prob_home_run, simulations)
 
-print(f"The best position for the slugger is: {best_position}")
+    # Plotting the results with FiveThirtyEight style
+    style.use('fivethirtyeight')
+    plt.plot(range(1, 10), average_runs_list, marker='o')
+    plt.xlabel('Slugger Position in Lineup')
+    plt.ylabel('Average Runs Scored')
+    plt.title('Average Runs Scored for Each Slugger Position',wrap=True)
+    plt.axvline(x=best_position, color='r', linestyle='--', label=f'Optimal Position: {best_position}')
+    plt.xticks(range(1, 10))
+    plt.legend()
+    plt.tight_layout()
+    plt.show()
+    plt.savefig('solution.png')
+
+    print(f"The best position for the slugger is: {best_position}")
+
