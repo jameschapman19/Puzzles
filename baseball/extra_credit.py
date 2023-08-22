@@ -60,12 +60,12 @@ if __name__ == '__main__':
     print(f"The best positions for the sluggers are: {best_positions[0] + 1} and {best_positions[1] + 1}")
 
     # Create a heatmap
-    sns.heatmap(average_runs_matrix, annot=True, cmap='YlGnBu')
+    sns.heatmap(average_runs_matrix, annot=True, cmap='YlGnBu', fmt='.3f')
     plt.xlabel('Slugger 2 Position', weight='bold', fontsize=10)
     plt.ylabel('Slugger 1 Position', weight='bold', fontsize=10)
     plt.title('Average Runs Scored over Nine Innings', wrap=True, weight='bold', fontsize=12)
     plt.xticks(np.arange(9) + 0.5, np.arange(1, 10), weight='bold', fontsize=8)
     plt.yticks(np.arange(9) + 0.5, np.arange(1, 10), weight='bold', fontsize=8)
     plt.tight_layout()
-    plt.show()
     plt.savefig('extra_credit.png')
+    plt.show()

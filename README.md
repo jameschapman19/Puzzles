@@ -6,8 +6,6 @@ This repository contains my personal solutions to the challenging and engaging p
 1. [Introduction](#introduction)
 2. [Puzzles and Solutions](#puzzles-and-solutions)
 3. [How to Run the Code](#how-to-run-the-code)
-4. [Contributing](#contributing)
-5. [License](#license)
 
 ## Introduction
 "Fiddler on the Proof" presents a series of mathematical and computational puzzles that challenge our understanding of algorithms, logic, mathematics, and more. In this repository, you'll find my approach to solving these puzzles using various programming languages and techniques.
